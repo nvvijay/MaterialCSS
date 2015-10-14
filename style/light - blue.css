@@ -1,0 +1,251 @@
+ul{
+	padding: 0px;
+}
+
+ul li{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px #ccc solid;
+}
+
+.bg{
+	background-color: #ecf0f1;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.title{
+	background-color: #3498db;
+	width: 100%;
+	height: 60px;
+	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 	
+	display: flex;
+}
+
+.navbar{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: -webkit-inline-box;
+	overflow: hidden;
+}
+
+
+.navitem{
+	width: 100px;
+	height: 60px;
+	text-align: center;
+}
+
+.navitem a{
+	display: block;
+	padding: 10px;
+}
+
+.navitem:hover{
+	background-color: #44a8eb;
+}
+
+.titlelogo{
+	text-align: center;
+	width: 100px;
+}
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+.titlemenu{
+	display: none;
+}
+
+.title ul{
+	overflow: hidden;
+}
+
+.title ul li{
+	position: relative;
+	overflow: visible;
+}
+
+.title ul li:last-child::before{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 4px;
+	background: white;
+	transition: transform 0.3s;
+	content: '';
+}
+
+.title ul li:nth-child(1).selected ~ li:last-child::before {
+	transform: translate(-300%,0);
+}
+
+.title ul li:nth-child(2).selected ~ li:last-child::before {
+	transform: translate(-200%,0);
+}
+
+.title ul li:nth-child(3).selected ~ li:last-child::before {
+	transform: translate(-100%,0);
+}
+
+.titlenav i{
+	position: relative;
+}
+
+.aside{
+	background-color: white;
+	width: 250px;
+	padding:10px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 
+	display: block;
+	position: absolute;
+}
+
+.mainbody{
+	background-color: white;
+	width: calc(96% - 300px);
+	padding:10px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 
+	display: block;
+	position: relative;
+	left: 290px;
+}
+
+.blur{
+	-webkit-filter: blur(2px);
+}
+
+.sidebarcontainer{
+	width: 100%;
+	height: calc(100% - 60px);
+	background: rgba(0,0,0,0.5);
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+
+.sidebar{
+	width: 400px;
+	background-color: white;
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 
+	display: none;
+}
+
+.lianddesc{
+	line-height: 15px;
+	height: 50px;
+	padding: 5px;
+}
+
+.lianddesc b{
+	font-size: 20px;
+}
+
+// Rules for sizing the icon.
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; color: rgba(255,255,255,1); }
+
+// Rules for using icons as black on a light background.
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+// Rules for using icons as white on a dark background.
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+.ink{
+	display: block; 
+	position: absolute;
+	background: rgba(0, 010, 255, 0.25);
+	border-radius: 100%;
+	transform: scale(0);
+}
+
+.inkwhite{
+	display: block; 
+	position: absolute;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 100%;
+	transform: scale(0);
+}
+.ink.animate {
+	animation: ripple 0.4s linear;
+}
+.inkwhite.animate {
+	animation: ripple 0.4s linear;
+}
+@keyframes ripple {
+	100% {opacity: 0; transform: scale(2.5);}
+}
+
+@media screen and (max-width: 1080px) {
+	.navbar{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: none;
+		text-align: center;
+	}
+		
+	.navitem{
+		width: 100%;
+		height: 40px;
+	}
+	
+	.titlemenu{
+		display: table;
+	}
+	
+	.titlenav{
+		text-align: center;
+	}
+	.titlemenu{
+		text-align: center;
+	}
+	.titlelogo{
+		text-align: center;
+		width: 80%;
+		padding: 20%;
+	}
+	.titlebar{
+		display: flex;
+		width: 100%;
+	}
+
+	
+}
