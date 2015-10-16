@@ -11,6 +11,9 @@ ul li{
 	border-bottom: 1px #ccc solid;
 }
 
+*{
+	font-family: 'Roboto', sans-serif;
+}
 .bg{
 	background-color: #ecf0f1;
 	margin: 0px;
@@ -254,6 +257,20 @@ ul li{
 	border: 1px #ccc solid;
 }
 
+.text{
+	background: white;
+	border: solid 2px;
+	border-color: white white #3498db;
+	padding: 2px 4px;
+
+}
+
+.text:focus { 
+	background-color: white;
+	outline : 0px;
+	cursor-color: #3498db;
+}
+
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -272,7 +289,7 @@ ul li{
 .ink{
 	display: block; 
 	position: absolute;
-	background: rgba(0, 010, 255, 0.25);
+	background: rgba(50, 150, 220, 0.25);
 	border-radius: 100%;
 	transform: scale(0);
 }
@@ -280,7 +297,7 @@ ul li{
 .inkwhite{
 	display: block; 
 	position: absolute;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.75);
 	border-radius: 100%;
 	transform: scale(0);
 }

@@ -63,7 +63,7 @@ jQuery('.navitem').click(function(e){
 });
 
 //opening sidebar
-jQuery('.titlenav').click(function(e){
+jQuery('.titlenav, .sidebarcontainer').click(function(e){
 	//black background
 	jQuery('.sidebarcontainer').fadeToggle();
 
