@@ -78,3 +78,21 @@ jQuery('.titlenav, .sidebarcontainer').click(function(e){
 	//moving logo
 	jQuery('.titlenav i').animate({left: (jQuery('.titlenav i').css('left')=='-20px')?'0px':'-20px'});
 });
+
+jQuery(window).scroll(function() {
+	var win	= jQuery(window);
+	calc_scroll = function() {
+		var header = jQuery('.title').height(), scroll = win.scrollTop();
+		var trigger = 60;
+		if(scroll >= trigger) {
+			jQuery('.title').removeClass('big');
+			jQuery('.logo').removeClass('big');
+			jQuery('#explogo').removeClass('expandedlogo');
+		} else {
+			jQuery('.title').addClass('big');
+			jQuery('.logo').addClass('big');
+			jQuery('#explogo').addClass('expandedlogo');
+		}
+	}
+	calc_scroll();
+});

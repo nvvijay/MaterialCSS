@@ -26,6 +26,14 @@ ul li{
 	height: 60px;
 	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 	
 	display: flex;
+	transition: height .3s ease-in-out;
+	position: fixed;
+	z-index: 10;
+}
+
+.title.big{
+	height: 400px;
+	transition: height .3s ease-in-out;
 }
 
 .navbar{
@@ -34,8 +42,14 @@ ul li{
 	padding: 0px;
 	display: -webkit-inline-box;
 	overflow: hidden;
+	color: white;
+	font-weight: bold;
 }
 
+.navbar.right{
+	position: absolute;
+	right: 10px;
+}
 
 .navitem{
 	width: 100px;
@@ -56,6 +70,36 @@ ul li{
 	text-align: center;
 	width: 100px;
 }
+
+.logo.big{
+	font-size: 2em;
+	top: 100px;
+	left: 0px;
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+
+.logo.big.desc{
+	display: inline;
+	top:200px;
+	width: 100%;
+	font-size: 35px;
+}
+
+.logo.desc{
+	left: 0px;
+	font-size: 0;
+}
+
+.logo{
+	position: fixed;
+	font-size: 1em;
+	left: 60px;
+	top: 0px;
+	width: 0%;
+	transition: all .3s ease-in-out;
+}
+
 .material-icons {
 	font-family: 'Material Icons';
 	font-weight: normal;
@@ -150,10 +194,11 @@ ul li{
 
 .sidebarcontainer{
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 	background: rgba(0,0,0,0.5);
 	display: none;
-	position: absolute;
+	position: fixed;
+	top: 60px;
 	z-index: 10;
 }
 
@@ -271,6 +316,44 @@ ul li{
 	cursor-color: #3498db;
 }
 
+
+.headercontainer{
+	width:100%;
+	height: 350px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.headercontainer .overlay{
+	background: rgba(0,0,0,0.25);
+	width: 100%;
+	height: 350px;
+	position: absolute;
+	top: 60px;
+}
+
+.headerimg{
+	width:100%;
+}
+
+.headertxt{
+	color:white;
+	text-align: center;
+	font-size: 3em;
+}
+
+.subtext{
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.section1{
+	position: relative;
+	width: 100%;
+	height: 850px;
+	background: white;
+}
+
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -311,39 +394,3 @@ ul li{
 	100% {opacity: 0; transform: scale(2.5);}
 }
 
-@media screen and (max-width: 1080px) {
-	.navbar{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		display: none;
-		text-align: center;
-	}
-		
-	.navitem{
-		width: 100%;
-		height: 40px;
-	}
-	
-	.titlemenu{
-		display: table;
-	}
-	
-	.titlenav{
-		text-align: center;
-	}
-	.titlemenu{
-		text-align: center;
-	}
-	.titlelogo{
-		text-align: center;
-		width: 80%;
-		padding: 20%;
-	}
-	.titlebar{
-		display: flex;
-		width: 100%;
-	}
-
-	
-}
