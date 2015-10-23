@@ -352,8 +352,29 @@ ul li{
 	width: 100%;
 	height: 850px;
 	background: white;
+	text-align: center;
 }
 
+.feature{
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	height: 300px;
+	border: 1px #3498db solid;
+	border-radius: 3px; 
+	display: inline-block;
+}
+
+.featurelogo{
+	font-size: 6em;
+	color: #3498db;
+	font-weight: bold;
+}
+
+.featuretext{
+	line-height: 3;
+	color: #3498db;
+}
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }

@@ -83,15 +83,17 @@ jQuery(window).scroll(function() {
 	var win	= jQuery(window);
 	calc_scroll = function() {
 		var header = jQuery('.title').height(), scroll = win.scrollTop();
-		var trigger = 60;
+		var trigger = 1;
 		if(scroll >= trigger) {
 			jQuery('.title').removeClass('big');
 			jQuery('.logo').removeClass('big');
 			jQuery('#explogo').removeClass('expandedlogo');
+			jQuery('.headerpadding').css('height','90');
 		} else {
 			jQuery('.title').addClass('big');
 			jQuery('.logo').addClass('big');
 			jQuery('#explogo').addClass('expandedlogo');
+			jQuery('.headerpadding').css('height','400');
 		}
 	}
 	calc_scroll();
