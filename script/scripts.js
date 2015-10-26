@@ -88,7 +88,7 @@ jQuery(window).scroll(function() {
 			jQuery('.title').removeClass('big');
 			jQuery('.logo').removeClass('big');
 			jQuery('#explogo').removeClass('expandedlogo');
-			jQuery('.headerpadding').css('height','90');
+			jQuery('.headerpadding').css('height','150');
 		} else {
 			jQuery('.title').addClass('big');
 			jQuery('.logo').addClass('big');

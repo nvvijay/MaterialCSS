@@ -13,6 +13,7 @@ ul li{
 
 *{
 	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 }
 .bg{
 	background-color: #ecf0f1;
@@ -55,6 +56,10 @@ ul li{
 	width: 100px;
 	height: 60px;
 	text-align: center;
+}
+
+.navitem.selected{
+	overflow: hidden;
 }
 
 .navitem a{
@@ -342,6 +347,9 @@ ul li{
 	font-size: 3em;
 }
 
+.headerpadding{
+	transition: height .3s ease-in-out;
+}
 .subtext{
 	font-size: 1em;
 	font-weight: 100;
@@ -350,7 +358,7 @@ ul li{
 .section1{
 	position: relative;
 	width: 100%;
-	height: 850px;
+	height: 350px;
 	background: white;
 	text-align: center;
 }
@@ -375,6 +383,16 @@ ul li{
 	line-height: 3;
 	color: #3498db;
 }
+
+.section2{
+	width: 100%;
+	height: 300px;
+	padding: 10px;
+	background: #3498db;
+	color: white;
+	text-align: center;
+}
+
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
