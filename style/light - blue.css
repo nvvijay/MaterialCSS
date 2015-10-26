@@ -357,8 +357,8 @@ ul li{
 
 .section1{
 	position: relative;
+	padding: 20px 0px;
 	width: 100%;
-	height: 350px;
 	background: white;
 	text-align: center;
 }
