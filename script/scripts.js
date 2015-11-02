@@ -98,3 +98,19 @@ jQuery(window).scroll(function() {
 	}
 	calc_scroll();
 });
+
+var num = 1;
+jQuery('.imgnav1').click(function(e){
+	jQuery('#s2'+(num+1)).css("font-size", "4em");
+	num = (num-1);
+	if(num == -1) num = 2;
+	console.log("num is : "+num);
+	jQuery('#s2'+(num+1)).css("font-size", "10em");
+});
+
+jQuery('.imgnav2').click(function(e){
+	jQuery('#s2'+(num+1)).css("font-size", "4em");
+	num = (num+1)%3;
+	console.log("num is : "+num);
+	jQuery('#s2'+(num+1)).css("font-size", "10em");
+});
