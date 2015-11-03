@@ -2,7 +2,7 @@
 //for listview
 var parent, ink, d, x, y;
 //for tabs
-jQuery('.title ul li').click(function(e){
+jQuery('.title ul li, .getitbutton').click(function(e){
 	parent = jQuery(this);
 	//create .ink element if it doesn't exist
 	if(parent.find(".inkwhite").length == 0)

@@ -414,7 +414,7 @@ ul li{
 .footerpart{
 	margin: 10px;
 	padding: 10px;
-	width: 25%;
+	width: 300px;
 	display: inline-block;
 }
 // Rules for sizing the icon.
@@ -476,11 +476,20 @@ ul li{
 	border-radius: 100%;
 	width: 80px;
 	height: 80px;
-	box-shadow: #999 1px 0 0 0;
+	box-shadow: #999 2px 5px 10px 0;
 	z-index: 25;
-	background: rgb(170,100,230);
+	background-color: #3498db; 
+	outline: 0px;
+	border: solid 0px;
+	margin: 10px auto;
+	color: white;
+	font-size: 3em;
+	line-height: 80px;
+	cursor:pointer;
+	position: relative;
+	overflow: hidden;
 }
 
 .getitbutton:hover{
-	background: rgb(190,120,250);
+	background-color: #44a8eb; 
 }
