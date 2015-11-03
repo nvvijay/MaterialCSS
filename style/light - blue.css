@@ -209,11 +209,23 @@ ul li{
 
 .sidebar{
 	width: 400px;
+	height: calc(100% - 65px);
 	background-color: white;
 	padding:10px;
 	border-radius: 5px;
 	box-shadow: rgb(100, 100, 100) 1px 1px 1px; 
 	display: none;
+	overflow: scroll;
+	overflow-y: auto;
+}
+
+.sideheader{
+	background: #3498db; 
+	color: white;
+	margin:-10px;
+	padding: 10px;
+	height: 150px;
+	text-align: center;
 }
 
 .lianddesc{
@@ -392,6 +404,19 @@ ul li{
 	text-align: center;
 }
 
+.footer{
+	width: 100%;
+	background: white;
+	color: #3498db; 
+	text-align: center;
+}
+
+.footerpart{
+	margin: 10px;
+	padding: 10px;
+	width: 25%;
+	display: inline-block;
+}
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -431,4 +456,31 @@ ul li{
 @keyframes ripple {
 	100% {opacity: 0; transform: scale(2.5);}
 }
+*::-webkit-scrollbar-track, .op::-webkit-scrollbar-track{
+	background-color: #FAFAFA;
+}
 
+*::-webkit-scrollbar, .op::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb, .op::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.getitbutton{
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	box-shadow: #999 1px 0 0 0;
+	z-index: 25;
+	background: rgb(170,100,230);
+}
+
+.getitbutton:hover{
+	background: rgb(190,120,250);
+}
