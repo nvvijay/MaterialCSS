@@ -63,13 +63,12 @@ jQuery('.navitem').click(function(e){
 });
 
 //opening sidebar
-jQuery('.titlenav, .sidebarcontainer').click(function(e){
+jQuery('.sidebartoggle, .sidebarcontainer').click(function(e){
 	//black background
 	jQuery('.sidebarcontainer').fadeToggle();
 
 	//blurring the background
-	jQuery('.aside').toggleClass('blur');
-	jQuery('.mainbody_container').toggleClass('blur');
+	//jQuery('.mainbody_container').toggleClass('blur');
 		
 	//toggling sidebar
 	var options = { "direction" : "left" };
@@ -113,4 +112,8 @@ jQuery('.imgnav2').click(function(e){
 	num = (num+1)%3;
 	console.log("num is : "+num);
 	jQuery('#s2'+(num+1)).css("font-size", "10em");
+});
+
+jQuery('.mobilemenu').click(function(e){
+	jQuery('.mobilemenuexpand').toggleClass('open');
 });

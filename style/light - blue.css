@@ -45,6 +45,7 @@ ul li{
 	overflow: hidden;
 	color: white;
 	font-weight: bold;
+	position:relative;
 }
 
 .navbar.right{
@@ -97,7 +98,7 @@ ul li{
 }
 
 .logo{
-	position: fixed;
+	position: absolute;
 	font-size: 1em;
 	left: 60px;
 	top: 0px;
@@ -130,7 +131,11 @@ ul li{
 	font-feature-settings: 'liga';
 }
 
-.titlemenu{
+.mobilemenu{
+	display: none;
+}
+
+.mobilemenuexpand{
 	display: none;
 }
 
@@ -217,6 +222,7 @@ ul li{
 	display: none;
 	overflow: scroll;
 	overflow-y: auto;
+	z-index: 11;
 }
 
 .sideheader{

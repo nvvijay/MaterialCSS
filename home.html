@@ -4,6 +4,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/light - blue.css">	
+	<link rel="stylesheet" type="text/css" href="style/light-blue-mobile.css">
 	<script src="script/jquery214.js"></script>
 </head>
 <body class="bg">
@@ -11,22 +12,31 @@
 <div class="title big">
 	<div class="titlebar">
 	<table width=100%> <tr>
-	<td class="titlenav"><i class="material-icons md-light md-48">menu</i></td>
+	<td class="titlenav sidebartoggle"><i class="material-icons md-light md-48">menu</i></td>
 	<td class="headertxt" width=80%><span class="logo big"><b>Material</b>css<br><span class="logo big desc">Trying to Imitate Android Flat Design in CSS!</span></span></td>
-	<td class="titlemenu"><i class="material-icons md-light md-48 mobonly">more_vert</i></td>
+	<td class="mobilemenu"><i class="material-icons md-light md-48 mobonly">more_vert</i></td>
 	<tr></table>
 	</div>
 	<ul class="navbar right">
-		<li class="navitem selected"><a>nav1</a></li>
-		<li class="navitem"><a>nav2</a></li>
-		<li class="navitem"><a>nav3</a></li>
-		<li class="navitem"><a>nav4</a></li>
+		<li class="navitem selected"><a>Home</a></li>
+		<li class="navitem"><a>Widgets</a></li>
+		<li class="navitem"><a>JavaScript</a></li>
+		<li class="navitem"><a>Download</a></li>
 	</ul>
 	
 </div>
+<div class="mobilemenuexpand">
+<div class="mobilemenuheader"><div class="headertext"><i class="material-icons">apps</i>Menu!</div><div class="headerclose mobilemenu" style="float:right" class="mobilemenu">x</div></div>
+<div class="mobilemenubody">
+	<div class="menuitem"></div>
+	<div class="menuitem"></div>
+	<div class="menuitem"></div>
+	<div class="menuitem"></div>
+</div>
+</div>
 <div class="headerpadding" style="background: white; width:100%; height:400px; display: block; transition: all .3s ease-in-out;"></div>
 <div class="sidebarcontainer">
-<div class="sidebar"><div class="sideheader"><h2>Header!</h2><i class="material-icons featurelogo"  style="color: white;font-size: 5em;font-weight: normal;">perm_identity</i><br><span>Header Description!</span></div><hr><ul><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li></ul></div>
+<div class="sidebar"><div class="sideheader"><h2>Header!</h2><i class="material-icons featurelogo"  style="color: white;font-size: 5em;font-weight: normal;">perm_identity</i><br><span>Header Description!</span></div><ul><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li><li class='lianddesc'><b>test</b><p>description</p></li></ul></div>
 </div>
 <div class="section1">
 	<div class="feature"><div class="featurelogo">A</div><i class="material-icons featurelogo">thumb_up</i><div class="featuretext">this is a feature that does A</div></div>
